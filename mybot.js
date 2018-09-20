@@ -43,9 +43,7 @@ var config = require('./config');
 // Instance of Discord Js that we will be interacting with
 var bot = new Discord.Client();
 
-// Require Wolfram and set your app ID via the config file
-var WolframLib = require('node-wolfram');
-var Wolfram = new WolframLib(config.wolfram.APP_ID);
+
 
 // Different result types that wolfram will give back
 var resultOpts = ["Result", "Exact result", "Decimal approximation"];
